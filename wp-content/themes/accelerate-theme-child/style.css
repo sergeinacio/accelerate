@@ -22,6 +22,11 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+#masthead nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
@@ -70,4 +75,26 @@
 	font-weight: bold;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+
+/* CASE STUDIES */
+
+article.case-study {
+	margin: 40px 0 0;
+}
+
+aside.case-study-sidebar {
+	float: left;
+	width: 314px;
+	margin: 0 40px 0 0;
+}
+
+div.case-study-images {
+	float: left;
+	width: 606px;
+}
+
+div.case-study-images img {
+	margin-bottom: 50px;
 }
