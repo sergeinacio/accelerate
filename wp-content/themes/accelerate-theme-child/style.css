@@ -90,6 +90,29 @@ aside.case-study-sidebar {
 	margin: 0 40px 0 0;
 }
 
+aside.case-study-sidebar h5 {
+	margin: 0;
+    font-size: 12px;
+    line-height: 1.3333333333;
+    color: #909090;
+}
+
+aside.case-study-sidebar h6 {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+aside.case-study-sidebar p {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+aside.case-study-sidebar a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
 div.case-study-images {
 	float: left;
 	width: 606px;
