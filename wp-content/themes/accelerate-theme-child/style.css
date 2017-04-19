@@ -130,15 +130,17 @@ aside.case-study-sidebar {
 
 aside.case-study-sidebar h5 {
 	margin: 0;
-    font-size: 12px;
+	margin-bottom: 15px;
+    font-size: 14px;
     line-height: 1.3333333333;
     color: #909090;
+    font-weight: 400;
 }
 
 aside.case-study-sidebar h6 {
     font-size: 14px;
     line-height: 1.5;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 aside.case-study-sidebar p {
@@ -146,7 +148,16 @@ aside.case-study-sidebar p {
     margin-bottom: 24px;
 }
 
-aside.case-study-sidebar a {
+aside.case-study-sidebar > a > span {
+    font-size: .65em;
+    min-height: 100%;
+    align-self: center;
+    margin-top: 1px;
+    display: inline-block;
+}
+
+aside.case-study-sidebar > a {
+	display: flex;
     font-size: 14px;
     font-weight: bold;
 }

@@ -44,3 +44,19 @@ function create_custom_post_types() {
 
 /* ADD Custom post types */
 add_action( 'init', 'create_custom_post_types' );
+
+/**
+ * Filter the except length to 20 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+function custom_excerpt_more($more) {
+	return '...';
+}
+add_filter('excerpt_more', 'custom_excerpt_more');
