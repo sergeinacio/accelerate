@@ -14,8 +14,11 @@
 
 
 /* HOMEPAGE */
+
+/* Homepage general */
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    margin-bottom: 40px;
 }
 
 #masthead {
@@ -77,6 +80,41 @@
 	text-transform: uppercase;
 }
 
+/* Home page featured section */
+
+.featured-work {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+
+.featured-work .site-content > h4 {
+	margin: 0px auto 40px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.featured-work ul li > figure {
+	margin: 0 10px;	
+}
+
+.homepage-featured-work {
+	display: flex;
+	list-style-type: none;
+    margin-left: 0px;
+}
+
+.individual-feature-work {
+	float: left;
+    width: 33.3%;
+	display: inline-block;
+	text-align: center;
+	align-self: flex-end;
+}
+
+.individual-feature-work > h5 {
+	margin: 20px auto 40px;
+}
 
 /* CASE STUDIES */
 
