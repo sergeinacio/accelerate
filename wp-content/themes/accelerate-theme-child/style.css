@@ -98,6 +98,10 @@
 	margin: 0 10px;	
 }
 
+.featured-work ul li > figure > img {
+	max-height: 201px;
+}
+
 .homepage-featured-work {
 	display: flex;
 	list-style-type: none;
@@ -166,6 +170,12 @@ div.case-study-images {
 	float: left;
 	width: 606px;
 }
+
+div.case-study-images a > img {
+	width: 100%;
+    height: auto;
+}
+
 
 div.case-study-images img {
 	margin-bottom: 50px;

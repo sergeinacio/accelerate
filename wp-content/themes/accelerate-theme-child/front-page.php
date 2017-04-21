@@ -68,6 +68,9 @@ get_header(); ?>
 		<?php wp_reset_query(); ?>
 
 		</div><!-- .blog-post -->
+		<div class="blog-post">
+
+		</div><!-- .blog-post -->
 	</div><!-- .site-content -->
 </section><!-- .recent-posts -->
 
