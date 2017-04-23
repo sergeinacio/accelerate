@@ -60,3 +60,8 @@ function custom_excerpt_more($more) {
 	return '...';
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
+
+function accelerate_child_scripts() {
+wp_enqueue_style('accelerate-child-google-fonts', '//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300italic,400italic,600italic,400,600,700,300');
+}
+add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
