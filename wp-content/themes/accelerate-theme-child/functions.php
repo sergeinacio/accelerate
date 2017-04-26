@@ -40,6 +40,19 @@ function create_custom_post_types() {
 			'rewrite' => array( 'slug' => 'case_studies' ),
 		)
 	);
+
+	register_post_type( 'about',
+		array(
+			'labels' => array(
+				'name' => __( 'Services/About' ),
+				'singular_name' => __( 'Service' )
+				),
+			'supports' => array('revisions'),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array( 'slug' => 'about' ),
+		)
+	);
 }
 
 /* ADD Custom post types */

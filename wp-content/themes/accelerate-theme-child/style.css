@@ -180,3 +180,71 @@ div.case-study-images a > img {
 div.case-study-images img {
 	margin-bottom: 50px;
 }
+
+/* CONTACT FORM */
+
+.contact-form {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.contact-form p {
+	letter-spacing: -0.5px;
+}
+
+.contact-form .nf-field-label {
+	font-size: 14px;
+}
+
+.contact-form #nf-field-4-wrap{
+	float: right;	
+}
+
+.contact-form #nf-field-4{
+    background: none repeat scroll 0 0 #45ac9d;
+    padding: 15px 80px;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+
+/* ABOUT PAGE */
+
+.about-page {
+    background: url(img/taxi-photo.jpg) no-repeat scroll left bottom / cover rgba(0, 0, 0, 0);
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+.about-page .site-content {
+    height: 100%;
+}
+
+.about-hero {
+	position: relative;
+	display: block;
+	height: 100%;
+	width: 70%;
+	margin: 0 auto;
+	font-weight: bold;
+	color: white;
+}
+
+.about-hero p {
+	position: absolute;
+	width: 100%;
+	margin-bottom: 0px;
+	top:50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	font-weight: 600;
+	font-size: 27px;
+	line-height: 38px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+.about-services {
+	display: block;
+}
