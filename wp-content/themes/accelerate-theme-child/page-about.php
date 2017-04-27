@@ -23,58 +23,60 @@ get_header(); ?>
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
-
-			<?php 
-				$args 	= array( 'post_type' => 'about', 'posts_per_page' => 10 );
-				$loop 	= new WP_Query( $args );
-				$count	= 1;
-				while ( $loop->have_posts() ) : $loop->the_post();
-				$service_description 	= get_field('service_description');
-				$service_title 			= get_field('service_title');
-				$image 					= get_field('image');
-				$size 					= "full";
-			?>
-
-				<?php if ($count %2 != 0) { ?>
-				<article class="about-services">
+			<section class="about-content">
 				<div id="our-services">
 					<h5>Our Services</h5>
-					<p>We take pride in our clients and the content we create for them.</p>
-					<p>Here's a brief overview of our offered services.</p>
+					<p>We take pride in our clients and the content we create for them. Here's a brief overview of our offered services.</p>
+
 				</div>
-					<aside class="case-study-sidebar">
-						<?php if($image) {
-							echo wp_get_attachment_image( $image, $size );
-						} ?>
-						
-					</aside>
-						
-					<div class="case-study-images">
-						<h4><?php echo $service_title; ?></h4>
-						<p><?php echo $service_description; ?></p>
-						<?php the_content(); ?>
-						<p><?php echo $count; ?></p>
-					</div>
-				</article>
-				<?php $count++; } else { ?>
+				<?php 
+					$args 	= array( 'post_type' => 'about', 'posts_per_page' => 10 );
+					$loop 	= new WP_Query( $args );
+					$count	= 1;
+					while ( $loop->have_posts() ) : $loop->the_post();
+					$service_description 	= get_field('service_description');
+					$image 					= get_field('image');
+					$size 					= "full";
+				?>
+
+					<?php if ($count %2 != 0) { ?>
 					<article class="about-services">
-					<div class="case-study-images">
-						<h4><?php echo $service_title; ?></h4>
-						<p><?php echo $service_description; ?></p>
-						<?php the_content(); ?>
-					</div>
-					<aside class="case-study-sidebar">
-						<?php if($image) {
-							echo wp_get_attachment_image( $image, $size );
-						} ?>
-						
-					</aside>
-					<p><?php echo $count; ?></p>
-				</article>
-				<?php $count++; } ?>
-			<?php endwhile; // end of the loop. ?>
+						<div class="service-image" style="margin-right: 35px">
+							<?php if($image) {
+								echo wp_get_attachment_image( $image, $size );
+							} ?>
+							
+						</div>
+							
+						<div class="service-description">
+							<h2><?php the_title(); ?></h2>
+							<p><?php echo $service_description; ?></p>
+							<?php the_content(); ?>
+						</div>
+					</article>
+					<?php $count++; } else { ?>
+						<article class="about-services">
+							<div class="service-description">
+								<h2><?php the_title(); ?></h2>
+								<p><?php echo $service_description; ?></p>
+								<?php the_content(); ?>
+							</div>
+						<div class="service-image" style="margin-left: 35px">
+							<?php if($image) {
+								echo wp_get_attachment_image( $image, $size );
+							} ?>
+							
+						</div>
+					</article>
+					<?php $count++; } ?>
+				<?php endwhile; // end of the loop. ?>
 
-		</div><!-- #content -->
+			</div><!-- #content -->
+		</section>
 	</div><!-- #primary -->
-
+	<div class="site-content">
+		<div class="contact-bottom">
+			<h2>Interested in working with us?</h2><a class="button" href="<?php echo home_url(); ?>/contact/">Contact Us</a>
+		</div><!-- .site-info -->
+	</div>
 <?php get_footer(); ?>

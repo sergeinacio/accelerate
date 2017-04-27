@@ -213,7 +213,6 @@ div.case-study-images img {
 .about-page {
     background: url(img/taxi-photo.jpg) no-repeat scroll left bottom / cover rgba(0, 0, 0, 0);
     height: 300px;
-    margin-bottom: 40px;
 }
 
 .about-page .site-content {
@@ -230,7 +229,7 @@ div.case-study-images img {
 	color: white;
 }
 
-.about-hero p {
+.about-hero > p {
 	position: absolute;
 	width: 100%;
 	margin-bottom: 0px;
@@ -245,6 +244,73 @@ div.case-study-images img {
 	text-rendering: optimizeLegibility;
 }
 
+.about-content {
+	position: relative;
+	text-align: center;
+}
+
 .about-services {
-	display: block;
+	position: relative;
+	display: inline-block;
+	width: 835px;
+	margin: 20px 0;
+}
+
+#our-services {
+	width: 55%;
+	margin: 50px auto 40px;
+	text-align: center;
+}
+
+#our-services h5 {
+	margin-top: 0px;
+	text-transform: uppercase;
+}
+
+.service-description {
+	float: left;
+	width: 584px;
+	display: inline-block;
+	padding-top: 10px;
+	text-align: left;
+}
+
+.service-description h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.service-description p {
+	margin-bottom: 0px;
+}
+
+.service-image {
+	float: left;
+	display: inline-block;
+}
+
+.service-image > img {
+	width: 216px;
+}
+
+.about-content h4, .about-content p {
+	display: inline-block;
+}
+
+.contact-bottom {
+	border-top: 1px dotted #e3e1e1;
+    padding: 60px 0 20px;
+    margin-top: 40px;
+	text-align: center;
+}
+
+.contact-bottom h2 {
+	display: inline;
+	font-size: 28px;
+}
+
+.contact-bottom > .button {
+	margin-left: 50px;
+	padding-left: 70px;
+	padding-right: 70px;
 }
