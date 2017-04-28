@@ -27,7 +27,12 @@
 
 #masthead nav ul li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 20px;
+}
+
+#masthead nav ul li:last-child {
+    display: inline-block;
+    margin: 0 0px;
 }
 
 .button {
@@ -123,6 +128,7 @@
 /* CASE STUDIES */
 
 article.case-study {
+	display: inline-block;
 	margin: 40px 0 0;
 }
 
