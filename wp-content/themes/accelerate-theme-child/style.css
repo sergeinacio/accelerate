@@ -320,3 +320,88 @@ div.case-study-images img {
 	padding-left: 70px;
 	padding-right: 70px;
 }
+
+/* 404 Page */
+
+
+#page-404 {
+	width: 500px;
+	margin-top: 50px;
+	padding: 25px 0 0;
+	text-align: center;
+}
+
+#page-404 h1 {
+	font-size: 75px;
+	color: #45ac9d;
+	margin: 12px 0px;
+}
+
+#page-404 h4 {
+	margin: 0;
+}
+
+#page-404 h6 {
+	display: inline-block;
+	margin: 0;
+}
+
+#page-404 p {
+	margin: 20px 0 10px;
+	font-weight: 400;
+}
+
+p.got-lost-margin {
+	margin-top: 35px;
+}
+
+#menu-404-nav {
+	width: 100%;
+	text-align: center;
+	margin: 0 0 10px;
+}
+
+#menu-404-nav li {
+	display: inline-block;
+	text-align: center;
+	font-weight: 600;
+}
+
+#menu-404-nav li a:hover {
+	color: #45ac9d;
+}
+
+#menu-404-nav li:after {
+	content: " | ";
+	padding: 0 10px;
+}
+
+#menu-404-nav li:last-child:after {
+	content: "";
+	padding: 0 0 0 10px;
+}
+
+#page-404 .widget_search-form {
+    border-bottom: 0px solid #BFBFBF;
+    margin-top: 30px;
+    padding: 0px 0px;
+    position: relative;
+}
+
+#page-404 .search-form {
+	display: inline-block;
+    overflow: hidden;
+}
+
+#page-404 .search-form {
+	width: 350px;
+}
+
+#page-404 .search-form .input {
+	width: 317px;
+}
+
+#page-404 .search-form .input-btn {
+	width: 33px;
+}
+

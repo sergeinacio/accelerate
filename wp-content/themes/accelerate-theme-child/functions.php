@@ -25,6 +25,14 @@
  * @since Accelerate Marketing 1.0
  */
 
+/* Additional menus */
+function accelerate_extra_menus() {
+  register_nav_menus( array(
+    '404-nav'  => __( '404 Nav', 'accelerate' ),
+  ) );
+}
+add_action( 'after_setup_theme', 'accelerate_extra_menus' ); 
+
 /* Creation of custom post types: */
 
 function create_custom_post_types() {
