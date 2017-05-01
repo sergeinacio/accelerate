@@ -39,9 +39,42 @@ get_header(); ?>
 			?>
 			<li class="individual-feature-work">
 				<figure>
-					<?php if($image_1) {
-						echo wp_get_attachment_image( $image_1, $size );
-					} ?>
+					<a href="<?php the_permalink(); ?>">
+						<?php if($image_1) {
+							echo wp_get_attachment_image( $image_1, $size );
+						} ?>
+					</a>
+				</figure>
+
+				<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+
+				<?php endwhile; ?>
+			</li>
+		<?php wp_reset_query(); ?>
+		</ul>
+
+	</div><!-- .site-conten -->
+</section><!-- .featured-work -->
+
+<section class="home-our-services">
+	<div class="site-content">
+
+		<h4>Our Services</h4>
+
+		<ul class="homepage-our-services">
+		<?php query_posts('posts_per_page=4&post_type=about'); ?>
+			
+			<?php while ( have_posts() ) : the_post();
+				$image 	= get_field('image');
+				$size 		= "medium";
+			?>
+			<li class="individual-feature-work">
+				<figure>
+					<a href="<?php the_permalink(); ?>">
+						<?php if($image) {
+							echo wp_get_attachment_image( $image, $size );
+						} ?>
+					</a>
 				</figure>
 
 				<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
@@ -69,8 +102,14 @@ get_header(); ?>
 
 		</div><!-- .blog-post -->
 		<div class="blog-post">
-
-		</div><!-- .blog-post -->
+		<h4>Recent Tweets</h4>
+		<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+			<div id="secondary" class="widget-area" role="complementary">
+				<?php dynamic_sidebar( 'sidebar-2' ); ?>
+			</div>
+		<?php endif; ?>
+		<!-- <a class="read-more-link" href="https://twitter.com/sergeinacio">Follow Us <span>&rsaquo;</span></a> -->
+		</div>
 	</div><!-- .site-content -->
 </section><!-- .recent-posts -->
 

@@ -21,6 +21,14 @@
     margin-bottom: 40px;
 }
 
+.homepage-featured-work h5 > a, .homepage-our-services h5 > a {
+	font-weight: 600;
+}
+
+.home-our-services {
+	margin-bottom: 66px;
+}
+
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
 }
@@ -40,14 +48,46 @@
 }
 
 .blog-post {
-	width: 50%;
+	float: left;	
+	display: inline-block;
+	width: 45%;
+	margin-right: 5%;
 }
 
-.blog-post h4 {
+.blog-post:last-child {
+	margin-right: 0;
+}
+
+.recent-posts {
+	display: block;
+	margin-bottom: 40px;
+}
+
+.recent-posts h4, {
 	font-size: 16px;
 	font-family: 'Montserrat';
 	color: #a6a6a6;
 	text-transform: uppercase;
+}
+
+.recent-posts h4 {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+}
+
+.recent-posts ul.tweets {
+	padding: 0;
+	margin-left: 0;
+}
+
+.recent-posts ul li {
+	list-style-type: none;
+}
+
+aside.widget {
+	padding: 0;
 }
 
 .blog-post h4 {
@@ -61,6 +101,12 @@
 	font-size: 24px;
 	font-family: 'Montserrat';
 	font-weight: bold;
+	margin: 30px 0;
+	color: #101010;
+}
+
+.recent-posts ul li  {
+	font: 17px/1.65 'open sans', Arial, sans-serif;
 }
 
 .blog-post h2 {
@@ -83,6 +129,14 @@
 	font-weight: bold;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+.blog-post ul.tweets {
+	margin-bottom: 24px;
+}
+
+.recent-posts .stt-em { /* Titter plugin, hide time*/
+	display: none;
 }
 
 /* Home page featured section */
@@ -93,7 +147,7 @@
 }
 
 
-.featured-work .site-content > h4 {
+.featured-work .site-content > h4, .home-our-services .site-content > h4 {
 	margin: 0px auto 40px;
 	text-align: center;
 	text-transform: uppercase;
@@ -107,7 +161,7 @@
 	max-height: 201px;
 }
 
-.homepage-featured-work {
+.homepage-featured-work, .homepage-our-services {
 	display: flex;
 	list-style-type: none;
     margin-left: 0px;
@@ -405,3 +459,21 @@ p.got-lost-margin {
 	width: 33px;
 }
 
+/* FOOTER */
+
+.site-footer .site-info {
+    border-top: 1px dotted #e3e1e1;
+    padding-top: 20px;
+    margin-top: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+#footer-right {
+    float: right;
+    display: block;
+}
+
+footer .site-description p {
+	line-height: 30px;
+}

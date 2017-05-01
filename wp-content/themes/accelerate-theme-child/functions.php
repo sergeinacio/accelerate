@@ -66,13 +66,13 @@ function create_custom_post_types() {
 add_action( 'init', 'create_custom_post_types' );
 
 /**
- * Filter the except length to 20 words.
+ * Filter the except length to 35 words.
  *
  * @param int $length Excerpt length.
  * @return int (Maybe) modified excerpt length.
  */
 function wpdocs_custom_excerpt_length( $length ) {
-    return 20;
+    return 35;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
@@ -85,3 +85,35 @@ function accelerate_child_scripts() {
 wp_enqueue_style('accelerate-child-google-fonts', '//fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300italic,400italic,600italic,400,600,700,300');
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
+
+/* Sidebar widget area */
+
+function accelerate_theme_child_widget_init() {
+	
+	register_sidebar( array(
+	    'name' =>__( 'Homepage sidebar', 'accelerate-theme-child'),
+	    'id' => 'sidebar-2',
+	    'description' => __( 'Appears on the static front page template', 'accelerate-theme-child' ),
+	    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	    'after_widget' => '</aside>',
+	    'before_title' => '<h2 class="widget-title">',
+	    'after_title' => '</h2>',
+	) );
+	
+}
+add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
+
+function accelerate_theme_child_widget_footer() {
+	
+	register_sidebar( array(
+	    'name' =>__( 'Footer right', 'accelerate-theme-child'),
+	    'id' => 'sidebar-3',
+	    'description' => __( 'Appears on the right side of the footer', 'accelerate-theme-child' ),
+	    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	    'after_widget' => '</aside>',
+	    'before_title' => '<h2 class="widget-title">',
+	    'after_title' => '</h2>',
+	) );
+	
+}
+add_action( 'widgets_init', 'accelerate_theme_child_widget_footer' );
