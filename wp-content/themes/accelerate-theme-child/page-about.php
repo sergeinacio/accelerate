@@ -30,7 +30,7 @@ get_header(); ?>
 
 				</div>
 				<?php 
-					$args 	= array( 'post_type' => 'services', 'posts_per_page' => 10 );
+					$args 	= array( 'post_type' => 'about', 'posts_per_page' => 10 );
 					$loop 	= new WP_Query( $args );
 					$count	= 1;
 					while ( $loop->have_posts() ) : $loop->the_post();

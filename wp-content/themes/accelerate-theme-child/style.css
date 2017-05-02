@@ -40,7 +40,7 @@
 
 #masthead nav ul li:last-child {
     display: inline-block;
-    margin: 0 0px;
+    margin: 0 0 0 20px;
 }
 
 .button {
@@ -268,6 +268,21 @@ div.case-study-images img {
     border: none;
 }
 
+/* SIDEBAR */
+
+.main-content {
+    float: left;
+    padding: 55px 47px 0 0;
+    width: 61%;
+}
+aside.sidebar {
+	border-left: 1px solid #bfbfbf;
+	padding: 55px 0 55px 3%;
+	float: left;
+	width: 31%;
+}
+/* BLOG PAGE */
+
 /* ABOUT PAGE */
 
 .about-page {
@@ -469,6 +484,10 @@ p.got-lost-margin {
     display: inline-block;
 }
 
+.site-footer {
+    margin-top: 0px;
+}
+
 #footer-right {
     float: right;
     display: block;
@@ -476,4 +495,57 @@ p.got-lost-margin {
 
 footer .site-description p {
 	line-height: 30px;
+}
+
+footer.site-footer .site-info {
+	width: 100%;
+}
+
+.navigation {
+	border-top: 1px dotted #e3e1e1;
+	margin-bottom: -40px;
+}
+
+/* BLOG PAGE */
+
+.blog-page .blog-header {
+	text-align: center;
+}
+
+.blog-page .blog-header > h2 {
+	border-bottom: 1px solid #bfbfbf;
+	margin: 50px 0 0;
+	padding-bottom: 50px;
+	font-size: 30px;
+	color: #404040;
+}
+
+.blog-page aside h2 {
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+.blog-page aside .zoom-social-icons-widget ul {
+	margin: 0;
+}
+
+.blog-page aside .zoom-social-icons-widget ul > li:first-child {
+	margin-left: 0;
+}
+
+.blog-page .widget_mc4wp_form_widget input:last-child {
+	margin-top: 10px;
+}
+
+.blog-page .widget  {
+	border-bottom: 1px solid #bfbfbf;
+	padding: 10px 0 20px;
+}
+
+.blog-page .widget:first-child  {
+	padding-top: 0;
+}
+
+.blog-page .widget:last-child  {
+	border-bottom: 0;
 }
