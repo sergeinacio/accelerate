@@ -12,7 +12,9 @@
 
 @import url("../accelerate-theme/style.css");
 
-
+body {
+	width: 980px;
+}
 /* HOMEPAGE */
 
 /* Homepage general */
@@ -157,7 +159,7 @@ aside.widget {
 	margin: 0 10px;	
 }
 
-.featured-work ul li > figure > img {
+.featured-work ul li > figure > a > img {
 	max-height: 201px;
 }
 
