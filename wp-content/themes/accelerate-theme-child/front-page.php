@@ -59,7 +59,7 @@ get_header(); ?>
 <section class="home-our-services">
 	<div class="site-content">
 
-		<h4>Our Services</h4>
+		<h4><a href="<?php echo home_url(); ?>/about/">Our Services</a></h4>
 
 		<ul class="homepage-our-services">
 		<?php query_posts('posts_per_page=4&post_type=about'); ?>
@@ -70,14 +70,14 @@ get_header(); ?>
 			?>
 			<li class="individual-feature-work">
 				<figure>
-					<a href="<?php the_permalink(); ?>">
+					<a href="<?php echo home_url(); ?>/about/">
 						<?php if($image) {
 							echo wp_get_attachment_image( $image, $size );
 						} ?>
 					</a>
 				</figure>
 
-				<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+				<h5><a href="<?php echo home_url(); ?>/about/"><?php the_title(); ?></a></h5>
 
 				<?php endwhile; ?>
 			</li>
